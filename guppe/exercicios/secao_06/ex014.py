@@ -1,7 +1,7 @@
-# Ler um numero int pos impar N e imprimir todos os pares ate ;n em ordem crescente
-num = int(input('Ditire um número ímpar: '))
-if num % 2 == 1:
-    for c in range(1, num + 1, 2):
+# Ler um numero int pos par N e imprimir todos os pares ate n em ordem decrescente
+num = int(input('Ditire um número par: '))
+if num % 2 == 0:
+    for c in range(num, -1, -2):
         print(c)
 else:
-    print('O número digitado não é ímpar.')
+    print('O número digitado não é par.')
