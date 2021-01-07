@@ -16,6 +16,19 @@ Em Python:
 As listas em Python são representadas por colchetes: []
 
 
+type([])
+
+lista1 = [1, 2, 99, 44, 15, 4, 5, 1, 42, 27]
+
+lista2 = ['K', 'a', 'o', 'r', 'i']
+
+lista3 = []
+
+lista4 = list(range(11))
+
+lista5 = list('Kaori')
+
+
 # Podemos facilmente checar se determinado valor está contido na lista
 num = 18
 if num in lista4:
@@ -162,16 +175,94 @@ numeros = [num1, num2, num3]
 print(numeros)
 
 
+# Fazemos acesso aos elementos de forma indexada
+
+#           0         1         2        3
+cores = ['verde', 'amarelo', 'azul', 'branco']
+print(cores[0])  # verde
+print(cores[1])  # amarelo
+print(cores[2])  # azul
+print(cores[3])  # branco
+
+# Fazer acesso aos elementos de forma indexada inversa (como uma roda, onde o final está ligado ao início)
+print(cores[-1])  # branco
+print(cores[-2])  # azul
+print(cores[-3])  # amarelo
+print(cores[-4])  # verde
+
+# Printar em for e while
+for cor in cores:
+    print(cor)
+indice = 0
+while indice < len(cores):
+    print(cores[indice])
+    indice = indice + 1
+
+# Gerar índice em um for
+for indice, cor in enumerate(cores):
+    print(indice, cor)
+
+# Usando o enumerate para criar índice em lista
+cores1 = list(enumerate(cores))
+print(cores)
+print(cores1)
+
+# Listas aceitam valores repetidos
+lista = []
+lista.append(42)
+lista.append(42)
+lista.append(33)
+lista.append(33)
+print(lista)
+
+
+# Outros métodos não tão importantes mas também úteis
+# Encontrar o índice de um elemento na lista
+numeros = [5, 6, 5, 7, 8, 9, 10]
+
+# Em qual índice está o valor 6?
+print(numeros.index(6))
+
+# Em qual índice está o valor 9?
+print(numeros.index(9))
+
+# OBS: Caso não haja o elemento na lista será apresentado o erro ValueError
+# print(numeros.index(22))
+
+# OBS: Caso haja elemento duplicado, ele retorna o índice do primeiro elemento encontrado
+print(numeros.index(5))
+
+# OBS: Podemos fazer busca dentro de um range, ou seja, qual índice começar a buscar
+print(numeros.index(5, 1))  # Buscando a partir do índice 1
+print(numeros.index(5, 2))  # Buscando a partir do índice 2
+# print(numeros.index(5, 3))  # Buscando a partir do índice 3
+# OBS: Caso não tenha esse elemento será apresentado ValueError
+
+# Podemos fazer busca dentro de um range, inicio/fim
+print(numeros.index(8, 3, 6))  # Buscar o valor 8 entre os indices 3 e 6
+
+
+
 """
-type([])
 
-lista1 = [1, 2, 99, 44, 15, 4, 5, 1, 42, 27]
+# Revisão de slicing
+# lista[inicio:fim:passo]
+# range(inicio:fim:passo)
 
-lista2 = ['K', 'a', 'o', 'r', 'i']
+# Trabalhando com slice de lista com o parâmentro 'início'
 
-lista3 = []
+lista = [1, 2, 3, 4]
+print(lista[::])  # Pega todos os elementos
+print(lista[1:])  # Iniciando do índice 1 e pegando todos os elementos restantes
+print(lista[-3:])  # Iniciando do índice -3 e pegando todos os elementos restantes
 
-lista4 = list(range(11))
+# Trabalhando com slice de lista com o parâmentro 'fim'
+print(lista[:2])  # Começa do índice 0, pega até o índice 2-1
+print(lista[:4])  # Começa do índice 0, pega até o índice 4-1
 
-lista5 = list('Kaori')
+print(lista[1:3])  # Começa do índice 1 e pega até o índice 3-1
 
+# Trabalhando com slice de lista com o parâmetro 'passo'
+print(lista[1::2])  # Começa em 1, vai até o final de 2 em 2
+
+print(lista[::2])  # Começa em 0, vai até o final de 2 em 2
