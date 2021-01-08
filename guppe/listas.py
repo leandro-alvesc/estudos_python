@@ -243,8 +243,6 @@ print(numeros.index(8, 3, 6))  # Buscar o valor 8 entre os indices 3 e 6
 
 
 
-"""
-
 # Revisão de slicing
 # lista[inicio:fim:passo]
 # range(inicio:fim:passo)
@@ -266,3 +264,88 @@ print(lista[1:3])  # Começa do índice 1 e pega até o índice 3-1
 print(lista[1::2])  # Começa em 1, vai até o final de 2 em 2
 
 print(lista[::2])  # Começa em 0, vai até o final de 2 em 2
+
+
+# Invertendo valores em uma lista
+nomes = ['Junji', 'Ito']
+
+nomes[0], nomes[1] = nomes[1], nomes[0]
+
+print(nomes)
+
+nomes = ['Junji', 'Ito']
+nomes.reverse()
+print(nomes)
+
+for nome in nomes:
+    print(nome, end=" ")
+
+
+
+# Soma, Valor Máximo*, Valor Mínimo*, Tamanho
+# * Se os valores forem todos inteiros ou reais
+
+lista = [1, 2, 3, 4, 5, 6]
+
+print(sum(lista))  # soma
+print(max(lista))  # máximo valor
+print(min(lista))  # mínimo valor
+print(len(lista))  # tamanho da lista
+
+
+# Transformar uma lista em tupla
+lista = [1, 2, 3, 4, 5, 6]
+print(lista)
+print(type(lista))
+
+tupla = tuple(lista)
+print(tupla)
+print(type(tupla))
+
+
+# Desempacotamento de listas
+lista = [1, 2, 3]
+
+num1, num2, num3 = lista
+
+print(num1)
+print(num2)
+print(num3)
+
+# OBS: Se tivermos quantidades diferentes para desempacotar do que variáveis para receber os valores teremos ValueError
+
+
+
+# Copiando uma lista para outra (Shallow Copy e Deep Copy)
+
+# Forma 1 - Deep Copy
+
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista.copy()
+print(nova)
+nova.append(4)
+
+print(lista)
+print(nova)
+
+# OBS: Veja que ao utilizarmso lista.copy() copiamos os dados para uma nova lista, mas elas ficaram totalmente
+# independentes, ou seja, modificando uma não afeta a outra. Isso em Python é chamado de Deep Copy (cópia profunda)
+
+# Forma 2 - Shallow Copy
+lista = [1, 2, 3]
+print(lista)
+
+nova = lista
+print(nova)
+
+nova.append(4)
+print(lista)
+print(nova)
+
+# OBS: Veja que utilizamso a cópia via atribuição, nesse caso os dados são copiados para a nova lista, porẽm
+# após realizar modificação em uma das listas, essa modificação se refletiu em ambas as listas. Em Python, isso
+# é chamado de Shallow Copy
+
+"""
