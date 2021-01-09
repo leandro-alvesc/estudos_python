@@ -1,5 +1,5 @@
 """
-Listas
+Listas (list)
 
 Listas em Python funcionam como vetores/matrizes (arrays) em outras linguagens, com a diferença
 de serem DINÂMICOS e também de podermos colocar QUALQUER tipo de dado.
