@@ -1,30 +1,22 @@
-# Ler um inteiro entre 1 e 12 e imprimir o mês correspondente
-dia = int(input('Que mês estamos? '))
+# Calcular e mostrar a área de um trapézio, a base maior e base menor devem ser numeros maiores que 0
+base_maior = float(input('Informe a base maior: '))
 
-print('-'*30)
-if dia == 1:
-    print('Estamos em Janeiro')
-elif dia == 2:
-    print('Estamos em Fevereiro')
-elif dia == 3:
-    print('Estamos em Março')
-elif dia == 4:
-    print('Estamos em Abril')
-elif dia == 5:
-    print('Estamos em Maio')
-elif dia == 6:
-    print('Estamos em Junho')
-elif dia == 7:
-    print('Estamos em Julho')
-elif dia == 8:
-    print('Estamos em Agosto')
-elif dia == 9:
-    print('Estamos em Setembro')
-elif dia == 10:
-    print('Estamos em Outubro')
-elif dia == 11:
-    print('Estamos em Novembro')
-elif dia == 12:
-    print('Estamos em Dezembro')
-else:
-    print('Mês inexistente')
+while base_maior <= 0:
+    print('Valor inválido. Digite novamente.')
+    base_maior = float(input('Informe a base maior: '))
+
+base_menor = float(input('Informe a base menor: '))
+
+while base_menor <= 0:
+    print('Valor inválido. Digite novamente.')
+    base_menor = float(input('Informe a base menor: '))
+
+altura = float(input('Informe a altura: '))
+
+while altura <= 0:
+    print('Valor inválido. Digite novamente.')
+    altura = float(input('Informe a altura: '))
+
+area = ((base_maior + base_menor) * altura) / 2
+
+print(f'A área do trapézio é: {area}')
