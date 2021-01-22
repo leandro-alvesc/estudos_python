@@ -231,5 +231,5 @@ veja = {}.fromkeys('teste', 'valor')
 print(veja)
 # OBS: string é um tipo iterável, então para cada caractere ele vai adicionar a string 'valor' a ele
 
-veja = {}.fromkeys(range(1,11), 'novo')
+veja = {}.fromkeys(range(1, 11), 'novo')
 print(veja)
