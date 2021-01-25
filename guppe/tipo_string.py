@@ -38,6 +38,8 @@ print(nome.upper())
 print(nome.lower())
 
 print(nome.split()) # Transforma em uma lista de strings
+
+print(nome.strip()) # Tira os espaços desnecessários de uma string
 """
 # [ 0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12 ]
 # ['L', 'e', 'a', 'n', 'd', 'r', 'o', ' ', 'A', 'l', 'v', 'e', 's']
