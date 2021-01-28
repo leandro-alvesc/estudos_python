@@ -44,14 +44,14 @@ print(nome.strip()) # Tira os espaços desnecessários de uma string
 # [ 0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12 ]
 # ['L', 'e', 'a', 'n', 'd', 'r', 'o', ' ', 'A', 'l', 'v', 'e', 's']
 nome = 'Leandro Alves'
-print(nome[0:7]) # Slice de String
+print(nome[0:7])  # Slice de String
 print(nome[8:13])
 
 print(nome.split())
 print(nome.split()[0])
 
 # [::-1] -> Comece do primeiro elemento, vá até o último e inverta
-print(nome[::-1]) # Inversão da String Pythônico
+print(nome[::-1])  # Inversão da String Pythônico
 
 print(nome.replace('L', 'K'))
 
