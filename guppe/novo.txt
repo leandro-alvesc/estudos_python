@@ -1,0 +1,18 @@
+Escrevendo dados em arquivo.
+Alterando os dados
+Linha
+Goblin
+Goblin
+Goblin
+Goblin
+Goblin
+Goblin
+Goblin
+Goblin
+Goblin
+Goblin
+oi
+tchau
+flw
+sair
+Bye
