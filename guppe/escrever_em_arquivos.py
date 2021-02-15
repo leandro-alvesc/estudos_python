@@ -11,15 +11,17 @@ parâmetro, caso contrário teremos TypeError.
 Caso o arquivo já exista, o arquivo será sobrescrito.
 """
 teste = input('O que deseja escrever 10 vezes? ')
-texto = ''
 # Exemplo de escrita - Forma Pythônica
 with open('novo.txt', 'w') as arquivo:
     arquivo.write('Escrevendo dados em arquivo.\n')
     arquivo.write('Alterando os dados\n')
     arquivo.write('Linha\n')
     arquivo.write(f'{teste}\n' * 10)
-    while texto != 'sair':
+    while True:
         texto = input('O que mais deseja escrever? (sair para finalizar) ')
-        arquivo.write(texto)
-        arquivo.write('\n')
+        if texto != 'sair':
+            arquivo.write(texto)
+            arquivo.write('\n')
+        else:
+            break
     arquivo.write('Bye')

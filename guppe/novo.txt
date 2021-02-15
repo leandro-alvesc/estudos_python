@@ -1,18 +1,16 @@
-Escrevendo dados em arquivo.
+Topo
+Lalao dados em arquivo.
 Alterando os dados
 Linha
-Goblin
-Goblin
-Goblin
-Goblin
-Goblin
-Goblin
-Goblin
-Goblin
-Goblin
-Goblin
 oi
-tchau
-flw
-sair
-Bye
+oi
+oi
+oi
+oi
+oi
+oi
+oi
+oi
+oi
+lala
+ByeTopoLala
