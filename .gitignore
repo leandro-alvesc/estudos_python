@@ -1,3 +1,4 @@
 # Ignorar essas pastas:
+__pycache__
 .idea/
 .vscode/
