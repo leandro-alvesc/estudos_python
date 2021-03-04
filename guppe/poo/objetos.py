@@ -3,6 +3,8 @@ POO - Objetos
 
 Objetos -> São instâncias da classe. Ou seja, após o mapeamento devemos poder criar quantos objetos forem
 necessários. Como se fosse variáveis do tipo da classe.
+
+T0do objeto herda da classe objects.
 """
 
 
