@@ -1,4 +1,5 @@
 # Ignorar essas pastas:
+.mypy_cache
 ./guppe/__pycache__
 __pycache__
 .idea/
